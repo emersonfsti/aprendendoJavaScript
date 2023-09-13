@@ -73,7 +73,7 @@ li{
     color: var(--puprple);
 }
 
-.botao-magico {
+#botao-magico {
     font: 500 12px 'Inter', sans-serif;
     text-transform: uppercase;
     background-color: transparent;
@@ -85,7 +85,7 @@ li{
     transition: backcolor-color 0.2s, border-color 0.2s;
 }
 
-.botao-magico:hover{
+#botao-magico:hover{
     background-color: var(--puprple);
     border-color: var(--puprple);
 }
@@ -145,4 +145,9 @@ p {
 
 .maga-imagens-container{
     filter: blur(2px);
+}
+
+main-footer{
+    align-content: center;
+    
 }
