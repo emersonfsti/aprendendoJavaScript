@@ -1,0 +1,148 @@
+:root{
+    --blue-dark:#070a4e;
+    --blue-medium: #252872;
+    --blue-light:#646693;
+    --red: #fc0303;
+    --puprple: #800080;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--blue-dark);
+    color: var(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.logojs {
+    width: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+.main-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 15px 16px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header-navigation-container{
+    display: flex;
+    gap: 25px;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-navigation li{
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.header-navigation li.active {
+    font-weight: 900px;
+    color: var(--puprple);
+}
+
+.botao-magico {
+    font: 500 12px 'Inter', sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--white);
+    padding: 16px 32px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+
+    transition: backcolor-color 0.2s, border-color 0.2s;
+}
+
+.botao-magico:hover{
+    background-color: var(--puprple);
+    border-color: var(--puprple);
+}
+
+main{
+    width: 100%;
+    max-width: 1120px;
+    margin: 72px auto 0;
+    padding: 0 16px;
+
+    display: flex;
+}
+
+.main-section {
+    max-width: 645px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+p {
+    margin-top: 18px;
+    font-weight: 300;
+}
+
+.social-medias-container{
+    position: fixed;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-medias-container ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.background-blur{
+    background-color: var(--white);
+    width: 370px;
+    height: 370px;
+    position: fixed;
+    top:0 ;
+    right: 0;
+
+    filter: blur(250px);
+    z-index: -1;
+
+
+}
+
+.maga-imagens-container{
+    filter: blur(2px);
+}
